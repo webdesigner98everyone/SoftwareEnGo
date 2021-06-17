@@ -1,0 +1,30 @@
+<!-- Creado por Luis Alberto Forero cali-valle el 16-06-2021 -->
+
+{{define "crear"}}
+{{template "cabecera"}}
+
+<div class="card">
+    <div class="card-header">
+        Formulario De Empleado
+    </div>
+    <div class="card-body">
+      <form method="post" action="/insertar">
+
+      <div class="form-group">
+        <label for="">Nombre Empleado:</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Ingrese Nombre" Required>
+
+          <div class="form-group">
+            <label for="">Correo Empresarial:</label>
+            <input type="email" class="form-control" name="correo" id="correo" aria-describedby="emailHelpId" placeholder="Ingrese Correo" Required>
+
+            <br/>
+            <button type="submit" class="btn btn-success">Agregar</button>
+            <a name="" id="" class="btn btn-primary" href="/" role="button">Cancelar</a>
+          </div>
+      </div>
+    </div>
+</div>
+
+{{template "pie"}}
+{{end}}
